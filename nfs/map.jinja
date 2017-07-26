@@ -18,8 +18,8 @@
         'portmap_service': 'rpcbind',
     },
     'RedHat': {
-    	'pkgs': ["nfs-kernel-server", "rpcbind", "nfs-common"],
-        'nfs_service': "nfs-kernel-server",
+    	'pkgs': ["nfs-utils", "rpcbind", "nfs-common"],
+        'nfs_service': "nfs",
         'portmap_service': 'rpcbind',
     },
 }, merge=salt['pillar.get']('nfs:server')) %}
